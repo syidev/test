@@ -252,9 +252,7 @@ main .plus:hover {
     main .item .description {
        width: 90%;
     }
-}
-@media screen and (max-width:767px) {
-    main .plus {
+     main .plus {
        display: none;
     }
 }
