@@ -265,6 +265,5 @@ main .plus:hover {
 @media screen and (max-width:650px) {
     .contact-with-us {
        display: none;
-    }
-    
+    }  
 }
