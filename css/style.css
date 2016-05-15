@@ -235,7 +235,7 @@ main .plus {
     text-align: center;
     position: fixed;
     bottom: 50px;
-    right: 3%;
+    right: 4%;
     box-shadow: 0 5px 10px #a6a6a6;
 }
 main .plus:hover {
