@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     transition-property: all;
-    transition-duration: 1s;
+    /*transition-duration: 1s;*/
     box-sizing: border-box;
 }
 html, body {
@@ -85,12 +85,12 @@ header nav {
     font-size: 14px;
     border-bottom: 1px solid #c0c0c0;
     box-shadow: 0 1px 6px #a6a6a6;
+    position: relative;
 }
 header nav .arrow {
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
     color:#757575;
 }
 header nav .arrow:hover {
@@ -259,10 +259,16 @@ main .plus:hover {
 @media screen and (max-width:675px) {
     header nav ul {
         margin-left: 70px;
-    }   
+        width: 77%;
+        min-width: 475px;
+    }
+    header nav ul {
+        
+    } 
 }
 @media screen and (max-width:650px) {
     .contact-with-us {
        display: none;
     }
+    
 }
