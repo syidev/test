@@ -81,7 +81,7 @@ header .top .exit a:hover {
     opacity: .5;
 }
 header nav {
-    height: 47px;
+    height: 46px;
     font-size: 14px;
     border-bottom: 1px solid #c0c0c0;
     box-shadow: 0 1px 6px #a6a6a6;
@@ -106,6 +106,7 @@ header nav ul li {
     display: inline-block;
     line-height: 45px;
     color:#757575;
+    overflow: hidden;
 }
 header nav ul li a {
     text-decoration: none;
@@ -234,7 +235,7 @@ main .plus {
     text-align: center;
     position: fixed;
     bottom: 50px;
-    right: 70px;
+    right: 3%;
     box-shadow: 0 5px 10px #a6a6a6;
 }
 main .plus:hover {
@@ -246,13 +247,15 @@ main .plus:hover {
     main .item .description {
        width: 65%;
     }
-    main .plus {
-       display: none;
-    }   
 }
 @media screen and (max-width:877px) {
     main .item .description {
        width: 90%;
+    }
+}
+@media screen and (max-width:767px) {
+    main .plus {
+       display: none;
     }
 }
 @media screen and (max-width:675px) {
