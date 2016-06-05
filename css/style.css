@@ -374,10 +374,10 @@ main .item .event {
     border-radius: 2px;
 }
 main .item .event:hover {
-     background-color: rgba(153, 153, 153, .26);
+    background-color: rgba(153, 153, 153, .26);
 }
 main .item .event:active {
-     background-color: rgba(153, 153, 153, .4);
+    background-color: rgba(153, 153, 153, .4);
 }
 main .divider {
     margin-top: 15px;
@@ -407,12 +407,12 @@ main .plus:hover {
 
 @media screen and (max-width:1366px) {
     main .table {
-       width: 55%;
+        width: 55%;
     }
 }
 @media screen and (max-width:1306px) {
     main .item .description {
-       width: 65%;
+        width: 65%;
     }
 }
 @media screen and (max-width:1160px) {
@@ -426,7 +426,7 @@ main .plus:hover {
 }
 @media screen and (max-width:1026px) {
     main .item .description {
-       width: 65%;
+        width: 65%;
     }
 }
 @media screen and (max-width:877px) {
@@ -434,10 +434,10 @@ main .plus:hover {
         margin-left: 15%;
     }
     main .item .description {
-       width: 60%;
+        width: 60%;
     }
-     main .plus {
-       display: none;
+    main .plus {
+        display: none;
     }
     main .item .rating {
 	margin-left: -175px;
@@ -448,6 +448,6 @@ main .plus:hover {
 }
 @media screen and (max-width:690px) {
     .contact-with-us {
-       display: none;
+        display: none;
     }  
 }

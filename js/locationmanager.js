@@ -75,11 +75,11 @@ $(document).ready(function(){
         location.deleteLocation($(this));    
     });
     
-    function fillHistory(){
-         $('#history').empty();
+    function fillHistory() {
+        $('#history').empty();
             for (var i = 0; i < location.locationHistory.length; i++) {
                 $('#history').append(('<li class=\"list-group-item\">'+location.locationHistory[i]+'</li>'));
-         }
+        }
     };    
 });
 

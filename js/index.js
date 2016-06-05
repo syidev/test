@@ -1,17 +1,17 @@
 $(document).ready(function() {
     
     var switcher = 0;
-    var hideMenuVar = 1160;
-        
-    if ($(window).width() <= hideMenuVar) {
+    var hideMenuWidth = 1160;
+    
+    if ($(window).width() <= hideMenuWidth) {
         hideMenu();
     } else {
         showMenu();
     }
     
     $(window).resize(function() {
-        if($(window).width() <= hideMenuVar) {
-           hideMenu();   
+        if($(window).width() <= hideMenuWidth) {
+            hideMenu();   
         } else {
             showMenu();
         }  
@@ -40,53 +40,43 @@ $(document).ready(function() {
         // $('main aside .info').css('margin-bottom', '30px');
         $('main aside ul li').css('width','100%');
         if ($(window).width() <= hideMenuVar) {
-                $('main aside').css('box-shadow','10px 10px 10px rgba(0,0,0, .5)');    
-        }
-        
+            $('main aside').css('box-shadow','10px 10px 10px rgba(0,0,0, .5)');    
+        }     
         switcher = 0;
     }
- 
+    
     $('.arrow').click( function() {
         if (switcher == 0) {
             hideMenu();
             $('.arrow > i').hide();
-            $('.arrow > i').show('puff','fast');    
-                                  
+            $('.arrow > i').show('puff','fast');                                   
         } else {
             showMenu();
             $('.arrow > i').hide();
             $('.arrow > i').show('puff','fast');    
         }     
     });
-
-    $('.fav').click( function() {
-        
+    
+    $('.fav').click( function() {  
         $(this).children().toggleClass('favorite');
-        $(this).toggleClass('favor');
-        
+        $(this).toggleClass('favor');      
         if ($(this).hasClass('favor')) {
-            $(this).css('display', 'block'); 
+            $(this).show(); 
         } else {
-            $(this).css('display', 'none');
+            $(this).hide();
         }
     });
-
-    $(".item").hover(
-        
+    
+    $(".item").hover(  
         function() {
-            $(this).find('.fav').css("display", "block");
+            $(this).find('.fav').show();
         }, 
         function() {
             if ($(this).find('.fav').hasClass('favor')) {
-                $(this).find('.fav').css("display", "block");
+                $(this).find('.fav').show();
             } else {
-                $(this).find('.fav').css("display", "none");
+                $(this).find('.fav').hide();
             }       
         }
     );   
 });
-
-
-
-
-
