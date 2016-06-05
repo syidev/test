@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Менеджер локаций</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        #error {
+            color: #d9534f;
+            margin: 0;
+            height: 15px;
+            margin-top: 10px;
+        }
+        i {
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center">Менеджер локаций</h1>
+            <hr>
+            <div class="col-sm-4"> 
+                <h4>Добавить/Удалить</h4>
+                <hr>
+                <input id="inputLoc" type="text" class="form-control" placeholder="Название локации">
+                <p id="error"></p>
+                <br>
+                <button id="addLoc" type="submit" class="btn btn-default">Добавить</button>
+                <button id="delAllLoc" type="submit" class="btn btn-default">Удалить все</button> 
+                <br>
+                <br>
+                <h4 id="quantAddLoc">Добавленных локаций: 0</h4>
+                <h4 id="quantDelLoc">Удаленных локаций: 0</h4>            
+            </div>
+            <div class="col-sm-4">  
+                <h4>Список</h4>
+                <hr>
+                <ul id="list" class="list-group"></ul>      
+            </div>
+            <div class="col-sm-4">
+                <h4>История</h4>
+                <hr>
+                <p id="info">Здесь пока ничего нет</p>
+                <ul id="history" class="list-group"></ul>              
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script src="js/locationmanager.js"></script>
+</body>
+</html>
