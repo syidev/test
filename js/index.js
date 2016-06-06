@@ -39,7 +39,7 @@ $(document).ready(function() {
         $('.info > img').css('width', '50px');
         // $('main aside .info').css('margin-bottom', '30px');
         $('main aside ul li').css('width','100%');
-        if ($(window).width() <= hideMenuVar) {
+        if ($(window).width() <= hideMenuWidth) {
             $('main aside').css('box-shadow','10px 10px 10px rgba(0,0,0, .5)');    
         }     
         switcher = 0;
