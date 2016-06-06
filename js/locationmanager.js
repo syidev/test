@@ -55,11 +55,12 @@ $(document).ready(function(){
     $('#addLoc').click(function() {
         
         var addName = $('#inputLoc').val();
-        $('#info').remove();
+        
         
         if (addName == 0) {
             $('#error').text('Недопустимое значение');       
         } else {
+            $('#info').remove();
             $('#error').text('');
             location.addLocation(addName);
         }              
